@@ -63,6 +63,7 @@ public class EtudiantsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         processRequest(request, response);
     }
 
@@ -85,7 +86,7 @@ public class EtudiantsServlet extends HttpServlet {
      String prenom = request.getParameter("prenom");
      String email = request.getParameter("email");
      FileWriter filewritter= new FileWriter("etudiants.csv",true);
-     filewritter.append(file_header);
+    // filewritter.append(file_header);
      filewritter.append(new_line_separator);
      filewritter.append(nom);
      filewritter.append(Comma_delimiter);
