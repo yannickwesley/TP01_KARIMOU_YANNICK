@@ -84,7 +84,7 @@ public class EtudiantsServlet extends HttpServlet {
      String nom= request.getParameter("nom");
      String prenom = request.getParameter("prenom");
      String email = request.getParameter("email");
-     FileWriter filewritter= new FileWriter("C:\\Users\\kykwy\\Dropbox\\Mon PC (DESKTOP-0HQ9HSH)\\Documents\\etudiants.csv",false);
+     FileWriter filewritter= new FileWriter("etudiants.csv",true);
      filewritter.append(file_header);
      filewritter.append(new_line_separator);
      filewritter.append(nom);
@@ -99,6 +99,7 @@ public class EtudiantsServlet extends HttpServlet {
      out.println("l'utilisateur "+nom+" a bien été enregistré");
      out.println("reussi");
     }
+    
 
     /**
      * Returns a short description of the servlet.
