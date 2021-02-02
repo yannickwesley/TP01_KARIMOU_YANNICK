@@ -1,5 +1,5 @@
 "# TP01_KARIMOU_YANNICK" 
-"Les methodes supportes par le servlet sont:" 
+"Les methodes supportees par le servlet sont:" 
 "-doGet" 
 "-getLastModified" 
 "-doHead" 
